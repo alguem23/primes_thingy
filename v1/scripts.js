@@ -1,9 +1,9 @@
 function yup() {
-    document.getElementById("clipboard").innerHTML += 'Haha'
+    document.getElementById("decomp_table").innerHTML += 'Haha'
 }
 
 function ye1() {
     var a = document.getElementById('template')
-    a.innerHTML += 'God, if this works :) '
-    document.getElementById("clipboard").innerHTML += a
+    a.innerHTML = '<div>God, if this works :)<div>'
+    document.getElementById("decomp_table").innerHTML += a.innerHTML
 }
