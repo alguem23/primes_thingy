@@ -10,32 +10,15 @@
         <script type="text/javascript" src="scripts.js"></script>
 
         <table>
-            <tr id="row4">
+            <tr>
                 <td>
-                    Result:
-                </td>
-                <td>
-                    <input type="number" placeholder="00" name="row4" class="row" id="input"/>
+                    <input type="number" class="row" id="input"/>
                 </td> 
             </tr>
         </table>
         
-        <input type="button" id="postToClipboard" onclick="decomp()" value="Post results!">
+        <input type="button" onclick="decomp()" value="Post results!">
         
-        <table>
-            <tr>
-                <td>Left</td>
-                <td>Right</td>
-            </tr>
-            <tr>
-                <td>Left1</td>
-                <td>Right1</td>
-            </tr>
-        </table>
-        
-        
-        <div id="decomp_table">
-            <div id="template"></div>
-        </div>
+        <table id="decompTable"></table>
     </body>
 </html>

@@ -41,12 +41,34 @@ function decompose(num) {
     return [factors, primes]
 }
 
+function decomp_old() {
+    var input = ~~(document.getElementById('input').value)
+
+    console.log(`Val: ${input}; Type: ${typeof input}; Val + 1: ${input+1}`)
+
+    var decomped = decompose(input)
+
+    console.log(decomped)
+
+    for (let i = 0; i < decomped[0].length; i++)
+        console.log(`${decomped[0][i]}        ${decomped[1][i]}`)
+
+    document.getElementById("decomp_table").innerHTML += input
+}
+
 function decomp() {
-    var a = ~~(document.getElementById('input').value)
+    var input = ~~(document.getElementById('input').value)
 
-    console.log(`Val: ${a}; Type: ${typeof a}; Val + 1: ${a+1}`)
+    var decomped = decompose(input)
 
-    console.log(decompose(a))
+    for (let i = 0; i < decomped[0].length; i++) {
+        var factor = decomped[0][i]
+        var prime  = decomped[1][i]
 
-    document.getElementById("decomp_table").innerHTML += a
+        if (prime == undefined) prime = ''
+
+        var row = `<tr>   <td> ${factor} </td>  <td> ${prime} </td>   </tr>`
+
+        document.getElementById('decompTable').innerHTML += row
+    }
 }
