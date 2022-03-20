@@ -40,14 +40,19 @@ function decomp() {
 
     var decomped = decompose(input)
 
+    var decompTable = '<table>'
+
     for (let i = 0; i < decomped[0].length; i++) {
         var factor = decomped[0][i]
         var prime  = decomped[1][i]
 
         if (prime == undefined) prime = ''
 
-        var row = `<tr>   <td> ${factor} </td>  <td> ${prime} </td>   </tr>`
+        var row = `<tr class="result">   
+        <td class="result"> ${factor} </td>
+        <td class="result"> ${prime} </td>
+        </tr>`
 
-        document.getElementById('decompTable').innerHTML += row
+        document.getElementById('decomps').innerHTML += row
     }
 }

@@ -1,4 +1,15 @@
-p {
-    text-align: justify;
-    text-indent: 50px;
+.result {
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid;
+    border-collapse: collapse;
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+input {
+    margin-right: auto;
+    margin-left: auto;
 }
