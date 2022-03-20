@@ -8,9 +8,14 @@
     padding: 10px;
     text-shadow: 1px 1px 1px #fff;
     margin-bottom: 10px;
+    background-color: #fff;
 }
 
 input {
     margin-right: auto;
     margin-left: auto;
+}
+
+body {
+    background-color: #1e1e1e;
 }
