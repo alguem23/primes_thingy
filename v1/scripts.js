@@ -40,8 +40,6 @@ function decomp() {
 
     var decomped = decompose(input)
 
-    var decompTable = '<table>'
-
     for (let i = 0; i < decomped[0].length; i++) {
         var factor = decomped[0][i]
         var prime  = decomped[1][i]
