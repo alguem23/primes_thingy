@@ -7,7 +7,9 @@ function ye1() {
 function isPrime(num) {
     if (! num > 1) return false;
 
-    for (let i in 0..Math.floor(Math.sqrt(num)))
+    var max = Math.floor(Math.sqrt(num))
+
+    for (let i in 2..max)
         if (num % i == 0)
             return false;
     
