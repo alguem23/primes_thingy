@@ -1,9 +1,3 @@
-function ye1() {
-    var a = document.getElementById('template')
-    a.innerHTML = '<div>God, if this works :)<div>'
-    document.getElementById("decomp_table").innerHTML += a.innerHTML
-}
-
 function isPrime(num) {
     if (! num > 1) return false;
 
@@ -39,21 +33,6 @@ function decompose(num) {
     }
 
     return [factors, primes]
-}
-
-function decomp_old() {
-    var input = ~~(document.getElementById('input').value)
-
-    console.log(`Val: ${input}; Type: ${typeof input}; Val + 1: ${input+1}`)
-
-    var decomped = decompose(input)
-
-    console.log(decomped)
-
-    for (let i = 0; i < decomped[0].length; i++)
-        console.log(`${decomped[0][i]}        ${decomped[1][i]}`)
-
-    document.getElementById("decomp_table").innerHTML += input
 }
 
 function decomp() {
