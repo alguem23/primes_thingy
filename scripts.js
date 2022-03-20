@@ -38,6 +38,8 @@ function decompose(num) {
 function decomp() {
     var input = ~~(document.getElementById('input').value)
 
+    if (input < 1) return;
+
     var decomped = decompose(input)
 
     var foo = ''
