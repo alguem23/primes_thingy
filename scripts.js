@@ -38,7 +38,7 @@ function decompose(num) {
 function decomp() {
     var input = ~~(document.getElementById('input').value)
 
-    if (input < 1) return;
+    if (input < 2) return;
 
     var decomped = decompose(input)
 
