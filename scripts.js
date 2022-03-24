@@ -59,3 +59,6 @@ function decomp() {
     document.getElementById('decomps').innerHTML += `<table class="result">${foo}</table>`
 }
 
+function Clear() {
+    document.getElementById('decomps').innerHTML = ''
+}
